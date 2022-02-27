@@ -1,12 +1,26 @@
-@startuml new
+@startuml uc
+skinparam linetype ortho
+' scale  2/3
 left to right direction
-actor "Food Critic" as fc
-rectangle Restaurant {
-  usecase "Eat Food" as UC1
-  usecase "Pay for Foodsss" as UC2
-  usecase "Drink" as UC3
+actor "Quản trị viên" as ad
+actor "Người dùng" as us
+
+package "Mô Hình UseCase Tổng Quan" {
+  usecase "Quản lý thông tin Giảng viên" as qlttgv
+  usecase "Đăng nhập" as dn
+  usecase "Quản lý đề cương chi tiết" as qldcct
+  usecase "Quản lý chương trình đạo tạo" as qlctdt
 }
-fc --> UC1
-fc --> UC2
-fc --> UC3
+us --> dn
+ad --> qlttgv
+ad --> qlctdt
+ad --> qldcct
+us --> qldcct
+ad -> dn
+
+' XSP <.. TGH : extend 
+' XGH <.. SX : extend
+' XSP <. XGH : extend
+
+' note right of gv : Thêm, sửa, xóa
 @enduml

@@ -1,0 +1,19 @@
+@startuml uc
+skinparam linetype ortho
+' scale  2/3
+left to right direction
+actor "Quản trị viên" as ad
+
+package "Mô Hình UseCase Quản lý chương trình đào tạo" {
+  usecase "Quản lý chương trình đào tạo" as qlctdt
+  'usecase "Đăng nhập" as dn
+}
+
+ad --> qlctdt
+
+' XSP <.. TGH : extend 
+' XGH <.. SX : extend
+' XSP <. XGH : extend
+
+ note right of qlctdt : Thêm, sửa, xóa
+@enduml

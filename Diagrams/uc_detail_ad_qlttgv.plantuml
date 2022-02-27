@@ -4,16 +4,11 @@ skinparam linetype ortho
 left to right direction
 actor "Quản trị viên" as ad
 
-package "Mô Hình UseCase Quản lý thông tin giảng viên" {
+package "Mô Hình UseCase Quản lý thông tin Giảng viên" {
   usecase "Quản lý thông tin Giảng viên" as qlttgv
-  'usecase "Đăng nhập" as dn
 }
 
 ad --> qlttgv
-
-' XSP <.. TGH : extend 
-' XGH <.. SX : extend
-' XSP <. XGH : extend
 
  note right of qlttgv : Thêm, sửa, xóa
 @enduml

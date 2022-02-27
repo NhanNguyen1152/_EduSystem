@@ -6,14 +6,21 @@ actor "Quản trị viên" as ad
 
 package "Mô Hình UseCase Quản lý chương trình đào tạo" {
   usecase "Quản lý chương trình đào tạo" as qlctdt
-  'usecase "Đăng nhập" as dn
+  usecase "Khoa" as k
+  usecase "Ngành" as nganh
+  usecase "Khóa" as khoa
+  usecase "Học kỳ" as hk 
+  usecase "Bộ môn chung" as bmc 
+  usecase "Bộ môn riêng" as bmr
 }
 
 ad --> qlctdt
-
-' XSP <.. TGH : extend 
-' XGH <.. SX : extend
-' XSP <. XGH : extend
+qlctdt <. k : extend
+qlctdt <. nganh : extend
+qlctdt <. khoa : extend
+qlctdt <.. hk : extend
+qlctdt <.. bmc : extend
+qlctdt <.. bmr : extend
 
  note right of qlctdt : Thêm, sửa, xóa
 @enduml

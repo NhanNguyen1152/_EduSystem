@@ -18,9 +18,4 @@ ad --> qldcct
 us --> qldcct
 ad -> dn
 
-' XSP <.. TGH : extend 
-' XGH <.. SX : extend
-' XSP <. XGH : extend
-
-' note right of gv : Thêm, sửa, xóa
 @enduml

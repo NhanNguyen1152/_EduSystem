@@ -1,21 +1,50 @@
 @startuml uc
-skinparam linetype ortho
-' scale  2/3
+'skinparam linetype ortho
+'scale  2/3
 left to right direction
 actor "Quản trị viên" as ad
 actor "Người dùng" as us
 
-package "Mô Hình UseCase Tổng Quan" {
+rectangle "HỆ THỐNG QUẢN LÝ KHUNG CHƯƠNG TRÌNH ĐÀO TẠO VÀ ĐỀ CƯƠNG CHI TIẾT" {
+  usecase "Đăng xuất" as dx
   usecase "Quản lý thông tin Giảng viên" as qlttgv
   usecase "Đăng nhập" as dn
   usecase "Quản lý đề cương chi tiết" as qldcct
-  usecase "Quản lý chương trình đạo tạo" as qlctdt
+  'usecase "Quản lý chương trình đạo tạo" as qlctdt
+  usecase "Xem thông tin giảng viên" as xttgv
+  usecase "Sửa thông tin giảng viên" as sttgv
+  usecase "Đổi mật khẩu" as dmk
+  usecase "Tải xuống đề cương" as txdc
+  usecase "Xem đề cương" as xdc
+  'usecase "Xem chương trình đào tạo" as xctdt
+  usecase "Quản lý Khoa" as qlk
+  usecase "Quản lý Ngành" as qln
+  usecase "Quản lý học phần" as qlhp
+  usecase "Quản lý học kỳ" as qlhk
+  ' quantrivien
+  usecase "Phân quyền người dùng" as pqnd
 }
+
 us --> dn
-ad --> qlttgv
-ad --> qlctdt
-ad --> qldcct
-us --> qldcct
 ad -> dn
+qlttgv <.. xttgv : extend
+qlttgv <... dmk : extend
+qlttgv <. sttgv : extend
+us -> xttgv
+us --> dmk
+us -> sttgv
+qldcct <. txdc : extend
+qldcct <.. xdc : extend
+qlttgv <.. pqnd : extend
+ad --> qlttgv
+ad --> dx
+us -> dx
+'qlctdt <. xctdt : extend
+'us --> xctdt
+us -> qldcct
+ad -> qlk
+ad -> qln
+ad -> qlhp
+ad -> qlhk
 
 @enduml

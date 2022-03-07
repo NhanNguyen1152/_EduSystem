@@ -9,13 +9,13 @@ rectangle "**HỆ THỐNG QUẢN LÝ KHUNG CHƯƠNG TRÌNH ĐÀO TẠO VÀ ĐỀ
   usecase "**1.2. Đăng xuất**" as dx
   usecase "**4.1. Quản lý thông tin Giảng viên**" as qlttgv
   usecase "**1.1. Đăng nhập**" as dn
-  usecase "**7.1. Quản lý đề cương chi tiết**" as qldcct
+  usecase "**8.1. Quản lý đề cương chi tiết**" as qldcct
   'usecase "Quản lý chương trình đạo tạo" as qlctdt
   usecase "4.3. Xem thông tin giảng viên" as xttgv
   usecase "4.5. Sửa thông tin giảng viên" as sttgv
   usecase "4.4. Đổi mật khẩu" as dmk
-  usecase "7.3. Tải xuống đề cương" as txdc
-  usecase "7.2. Xem đề cương" as xdc
+  usecase "8.3. Tải xuống đề cương" as txdc
+  usecase "8.2. Xem đề cương" as xdc
   'usecase "Xem chương trình đào tạo" as xctdt
   usecase "**2.1. Quản lý Khoa**" as qlk
   usecase "**3.1. Quản lý Ngành**" as qln

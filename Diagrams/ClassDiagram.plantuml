@@ -1,0 +1,71 @@
+@startuml Class
+scale 2/3
+skinparam linetype ortho
+' QuanLy -|> TaiKhoan
+GiangVien"1" -- "*"Khoa
+Khoa"1" -- "*"Nganh
+GiangVien"1" -- "*"ChiTietNganh
+ChiTietNganh"*" - "1"Nganh
+Nganh"1" -- "*"ChiTietHocPhan
+ChiTietHocPhan"*" - "1"HocPhan
+HocKy"1" -- "*"HocPhan
+LoaiHocPhan"1" -- "*"HocPhan
+HocPhan"1" -- "*"DeCuong
+class QuanLy
+{
+    char QL_Id
+    varchar QL_UserName
+    varchar QL_PassWord
+}
+Class ChiTietHocPhan{
+    char CTHP_Id
+    char NGANH_Id
+    char HP_Id
+}
+Class ChiTietNganh{
+    char CTN_Id
+    char GV_Id
+    char NGANH_Id
+}
+Class DeCuong{
+    char DC_Id
+    nvarchar DC_TenFile
+    varbinary DC_File
+    date DC_NgayThem
+    nvarchar DC_TenNguoiThem
+}
+Class GiangVien
+{
+    char GV_Id
+    nvarchar GV_Ten
+    varchar GV_UserName
+    varchar GV_PassWord
+}
+class HocKy{
+    char HK_Id
+    nvarchar HK_TenHocKy
+}
+class HocPhan{
+    char HP_Id
+    nvarchar HP_TenHocPhan
+    nvarchar HP_HocPhanTienQuyet
+    int HP_SoTinChi
+    int HP_SoTietLyThuyet
+    int HP_SoTietThucHanh
+    nvarchar HP_NhomTuChon
+    int HP_SoTinChiBatBuocCuaNhom
+}
+class Khoa{
+    char KHOA_Id
+    nvarchar KHOA_TenKhoa
+}
+class Nganh{
+    char NGANH_Id
+    nvarchar NGANH_TenNganh
+}
+class LoaiHocPhan{
+   char LHP_Id
+   nvarchar LHP_Ten
+}
+
+@enduml

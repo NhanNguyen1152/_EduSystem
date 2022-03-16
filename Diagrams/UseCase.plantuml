@@ -1,6 +1,6 @@
 @startuml uc
 'skinparam linetype ortho
-'scale  2/3
+scale  1/2
 left to right direction
 actor "Quản trị viên" as ad
 actor "Người dùng" as us

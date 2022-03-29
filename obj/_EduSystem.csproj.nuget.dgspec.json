@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\_EduSystem\\_EduSystem.csproj": {}
+    "c:\\Users\\F570Z-PC\\OneDrive\\Tài liệu\\GitHub\\_EduSystem\\_EduSystem.csproj": {}
   },
   "projects": {
-    "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\_EduSystem\\_EduSystem.csproj": {
+    "c:\\Users\\F570Z-PC\\OneDrive\\Tài liệu\\GitHub\\_EduSystem\\_EduSystem.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\_EduSystem\\_EduSystem.csproj",
+        "projectUniqueName": "c:\\Users\\F570Z-PC\\OneDrive\\Tài liệu\\GitHub\\_EduSystem\\_EduSystem.csproj",
         "projectName": "_EduSystem",
-        "projectPath": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\_EduSystem\\_EduSystem.csproj",
-        "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\ADMIN\\OneDrive\\Documents\\GitHub\\_EduSystem\\obj\\",
+        "projectPath": "c:\\Users\\F570Z-PC\\OneDrive\\Tài liệu\\GitHub\\_EduSystem\\_EduSystem.csproj",
+        "packagesPath": "C:\\Users\\F570Z-PC\\.nuget\\packages\\",
+        "outputPath": "c:\\Users\\F570Z-PC\\OneDrive\\Tài liệu\\GitHub\\_EduSystem\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\F570Z-PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -87,7 +87,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.405\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.403\\RuntimeIdentifierGraph.json"
         }
       }
     }
